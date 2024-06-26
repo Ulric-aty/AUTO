@@ -25,7 +25,7 @@ module.exports.run = async function({ api, event, args }) {
     const input = args.join(' ');
     
     if (!input) {
-        api.sendMessage('Hello, I am your virtual assistant how i can help you??🐕‍🦺', event.threadID, event.messageID);
+        api.sendMessage('Hello🧛, I am your virtual assistant how i can help you??🐕‍🦺', event.threadID, event.messageID);
         return;
     }
     
@@ -39,7 +39,7 @@ module.exports.run = async function({ api, event, args }) {
             return fonts[char] || char; // Using || operator for default fallback
         }).join('');
         
-        api.sendMessage(`*╔═══❖•ೋ° °ೋ•❖═══╗*\n\n🕵️ᴜʟʀɪᴄ-ᴀɪ☃ 🕵️\n≪━─━─━─━─◈─━─━─━─━≫\n${response} \n*╚═══❖•ೋ° °ೋ•❖═══╝*`, event.threadID, event.messageID);
+        api.sendMessage(`🕵️ᴜʟʀɪᴄ-ᴀɪ☃ 🕵️\n${response}\n\n\nThe bot was created on ulricai.onrender.com🐸`, event.threadID, event.messageID);
         
     } catch (error) {
         console.error('Error:', error);
