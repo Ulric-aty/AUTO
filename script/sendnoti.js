@@ -21,7 +21,7 @@ module.exports.run = async function ({ api, event, args, admin }) {
 	async function sendMessage(thread) {
 		try {
 			await api.sendMessage(
-`🟢🟡🔴\n ----------------\n『 𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 』\n\n ----------------\n𝑴𝒆𝒔𝒔𝒂𝒈𝒆 𝒇𝒓𝒐𝒎 𝒂𝒅𝒎𝒊𝒏:「${custom}」\n 𝘼𝙪𝙩𝙤𝘽𝙤𝙩𝙙𝙚𝙫:https://www.facebook.com/Churchill.Dev4100\n _________________________`,
+`🟢🟡🔴\n ----------------\n『 𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 』\n\n ----------------\n𝑴𝒆𝒔𝒔𝒂𝒈𝒆 𝒇𝒓𝒐𝒎 𝒂𝒅𝒎𝒊𝒏:「${custom}」\n 𝘼𝙪𝙩𝙤𝘽𝙤𝙩𝙙𝙚𝙫:https://www.facebook.com/t0nyparker\n _________________________`,
 				thread.threadID
 			);
 			sentCount++;
